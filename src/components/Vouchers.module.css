@@ -75,7 +75,6 @@ input[type="checkbox"] {
 } */ */
 
 
-
 /* General styling for larger screens */
 .container {
   display: flex;
@@ -84,12 +83,12 @@ input[type="checkbox"] {
 .leftCase {
   border-right: 1px solid var(--box-border);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  flex-basis: 20%;
+  flex-basis: 200px; /* Set a fixed width in pixels */
 }
 
 .rightCase {
   padding: 5px;
-  flex-basis: 80%;
+  flex-basis: calc(100% - 200px); /* Set a calculated width excluding the leftCase width */
 }
 
 .CheckBox {
@@ -99,65 +98,26 @@ input[type="checkbox"] {
 }
 
 .inputCheckbox {
-  width: 20%;
+  width: 20px; /* Set a fixed width in pixels */
   cursor: pointer;
 }
 
 .cardCase {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Reduced to three columns on smaller screens */
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted grid for better responsiveness */
+  gap: 10px; /* Increased gap for better readability */
   margin: 10px;
 }
 
 .OuterBox {
   padding: 10px;
-  height: 18rem;
+  height: 180px; /* Set a fixed height in pixels */
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.OuterBox:hover {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  transform: scale(1.01);
-}
-
-.middleBox {
-  border: 4px solid var(--main-color);
-  height: 13rem;
-  border-radius: 5px;
-}
-
-.shapes {
-  border: 1px solid;
-  margin: 10px;
-}
-
-.title {
-  margin: 4px;
-  text-align: center;
-}
+/* ... other styles ... */
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-  .leftCase {
-    border-right: none; /* Remove right border on smaller screens */
-    box-shadow: none; /* Remove box shadow on smaller screens */
-    flex-basis: 100%;
-  }
-
-  .rightCase {
-    flex-basis: 100%;
-  }
-
-  .CheckBox {
-    width: 100%;
-  }
-
-  .inputCheckbox {
-    width: auto; /* Allow checkbox to take full width on smaller screens */
-  }
-
-  .cardCase {
-    grid-template-columns: 1fr 1fr; /* Reduce to two columns on smaller screens */
-  }
+  /* Adjust styles as needed for smaller screens */
 }
