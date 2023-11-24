@@ -46,7 +46,7 @@ input[type="checkbox"] {
 
 .OuterBox {
   padding: 10px;
-  height: 17rem;
+  height: 18rem;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -68,7 +68,7 @@ input[type="checkbox"] {
 
 .title {
   margin: 4px;
-  text-align: center;
+  text-align: left;
 }
 
 /* Media query for smaller screens */
