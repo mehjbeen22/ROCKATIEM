@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+}
+
+.leftCase {
+  border-right: 1px solid var(--box-border);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  flex-basis: 20%;
+}
+
+.asideCaseItmes {
+  padding: 15px;
+  margin: 10px;
+  color: var(--font-color);
+}
+
+.asideCaseItmes:hover {
+  background-color: #e2e8f0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: var(--main-color);
+}
+
+/* RIGHT CONTAINER */
+.rightCase {
+  /* border: solid blue; */
+  padding: 5px;
+  flex-basis: 80%;
+}
+
+.CheckBox {
+  display: flex;
+  /* border: solid red; */
+  width: 30%;
+  padding: 10px;
+}
+
+input[type="checkbox"] {
+  width: 20%;
+  cursor: pointer;
+}
+
+.cardCase {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 10px;
+}
+
+.OuterBox {
+  /* border: solid teal;  */
+  padding: 10px;
+  height: 18rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.OuterBox:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transform: scale(1.01);
+}
+
+.middleBox {
+  border: 4px solid var(--main-color);
+  height: 13rem;
+  border-radius: 5px;
+}
+
+.shapes {
+  border: 1px solid;
+  margin: 10px;
+}
+
+.title {
+  margin: 4px;
+  text-align: center;
+}
