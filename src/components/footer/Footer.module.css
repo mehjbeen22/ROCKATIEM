@@ -1,4 +1,4 @@
-
+/* 
 
 .footerCase{
     border: 10px solid --border-color;
@@ -36,4 +36,55 @@
     width: 10%;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+} */
+
+
+/* Base styles for larger screens */
+.footerCase {
+    border: 10px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--border-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.backBtn {
+    display: flex;
+    align-items: center;
+    margin-inline-start: 2rem;
+    margin-block: 10px;
+    padding: 0.3rem;
+    background-color: #fff;
+    border: none;
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+
+.confirmBtn {
+    margin-inline-end: 2rem;
+    margin-block: 10px;
+    padding: 0.2rem;
+    background-color: var(--main-color);
+    font-size: 1.2rem;
+    border: none;
+    color: #fff;
+    width: 10%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .footerCase {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
+
+    .backBtn,
+    .confirmBtn {
+        width: auto; /* Allow buttons to take the full width on smaller screens */
+        margin: 0.5rem; /* Adjust spacing for better readability */
+    }
 }
