@@ -66,7 +66,7 @@ input[type="checkbox"] {
   border: 1px solid;
   margin: 10px;
   background-color: var(--main-color);
-  height: ;
+ 
 }
 
 .title {
@@ -77,28 +77,28 @@ input[type="checkbox"] {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column; 
   }
 
   .leftCase {
-    border-right: none; /* Remove right border on smaller screens */
-    box-shadow: none; /* Remove box shadow on smaller screens */
+    border-right: none; 
+    box-shadow: none; 
     flex-basis: 100%;
   }
 
-  .rightCase {
+  .rightCase 
     flex-basis: 100%;
   }
 
   .CheckBox {
-    width: 100%; /* Allow checkboxes to take full width on smaller screens */
+    width: 100%; 
   }
 
   input[type="checkbox"] {
-    width: auto; /* Allow checkbox to take full width on smaller screens */
+    width: auto;
   }
 
   .cardCase {
-    grid-template-columns: 1fr 1fr; /* Adjust the number of columns on smaller screens */
+    grid-template-columns: 1fr 1fr; 
   }
-}
+
