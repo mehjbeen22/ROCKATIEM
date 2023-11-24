@@ -46,7 +46,7 @@ input[type="checkbox"] {
 
 .OuterBox {
   padding: 10px;
-  height: 18rem;
+  height: 17rem;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
