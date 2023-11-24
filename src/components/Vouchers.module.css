@@ -30,6 +30,7 @@
   display: flex;
   width: 30%;
   padding: 10px;
+  gap : 12px;
 }
 
 input[type="checkbox"] {
@@ -64,6 +65,8 @@ input[type="checkbox"] {
 .shapes {
   border: 1px solid;
   margin: 10px;
+  background-color: var(--main-color);
+  height: ;
 }
 
 .title {
