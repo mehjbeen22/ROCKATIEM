@@ -86,7 +86,7 @@ input[type="checkbox"] {
     flex-basis: 100%;
   }
 
-  .rightCase 
+  .rightCase {
     flex-basis: 100%;
   }
 
@@ -102,3 +102,4 @@ input[type="checkbox"] {
     grid-template-columns: 1fr 1fr; 
   }
 
+}
