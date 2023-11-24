@@ -1,4 +1,5 @@
-/* .container {
+/* Default styles for larger screens */
+.container {
   display: flex;
 }
 
@@ -20,17 +21,14 @@
   color: var(--main-color);
 }
 
-/* RIGHT CONTAINER */
-/* .rightCase { */
-  /* border: solid blue; */
-  /* padding: 5px;
+.rightCase {
+  padding: 5px;
   flex-basis: 80%;
-} */
+}
 
-/* .CheckBox {
-  display: flex; */
-  /* border: solid red; */
-  /* width: 30%;
+.CheckBox {
+  display: flex;
+  width: 30%;
   padding: 10px;
 }
 
@@ -47,7 +45,6 @@ input[type="checkbox"] {
 }
 
 .OuterBox {
- 
   padding: 10px;
   height: 18rem;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -72,52 +69,33 @@ input[type="checkbox"] {
 .title {
   margin: 4px;
   text-align: center;
-} */ */
-
-
-/* General styling for larger screens */
-.container {
-  display: flex;
 }
-
-.leftCase {
-  border-right: 1px solid var(--box-border);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  flex-basis: 200px; /* Set a fixed width in pixels */
-}
-
-.rightCase {
-  padding: 5px;
-  flex-basis: calc(100% - 200px); /* Set a calculated width excluding the leftCase width */
-}
-
-.CheckBox {
-  display: flex;
-  width: 100%; /* Adjusted width for better responsiveness */
-  padding: 10px;
-}
-
-.inputCheckbox {
-  width: 20px; /* Set a fixed width in pixels */
-  cursor: pointer;
-}
-
-.cardCase {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted grid for better responsiveness */
-  gap: 10px; /* Increased gap for better readability */
-  margin: 10px;
-}
-
-.OuterBox {
-  padding: 10px;
-  height: 180px; /* Set a fixed height in pixels */
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-/* ... other styles ... */
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-  /* Adjust styles as needed for smaller screens */
+  .container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .leftCase {
+    border-right: none; /* Remove right border on smaller screens */
+    box-shadow: none; /* Remove box shadow on smaller screens */
+    flex-basis: 100%;
+  }
+
+  .rightCase {
+    flex-basis: 100%;
+  }
+
+  .CheckBox {
+    width: 100%; /* Allow checkboxes to take full width on smaller screens */
+  }
+
+  input[type="checkbox"] {
+    width: auto; /* Allow checkbox to take full width on smaller screens */
+  }
+
+  .cardCase {
+    grid-template-columns: 1fr 1fr; /* Adjust the number of columns on smaller screens */
+  }
 }

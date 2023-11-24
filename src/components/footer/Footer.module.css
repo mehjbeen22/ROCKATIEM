@@ -1,10 +1,7 @@
-
 /* Base styles for larger screens */
 .footerCase {
-    border: 10px solid var(--border-color);
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid var(--border-color);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     height: 4rem;
     margin-top: 1rem;
@@ -45,7 +42,7 @@
 
     .backBtn,
     .confirmBtn {
-        width: auto; /* Allow buttons to take the full width on smaller screens */
-        margin: 0.5rem; /* Adjust spacing for better readability */
+        width: 100%; /* Allow buttons to take the full width on smaller screens */
+        margin: 0.5rem 0; /* Adjust spacing for better readability */
     }
 }
